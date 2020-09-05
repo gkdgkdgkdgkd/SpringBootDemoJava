@@ -8,13 +8,17 @@
 - `IDEA 2020.2`
 - `Manjaro`
 
-# 3 `Kotlin`版
+# 3 目前已实现
 
-- [码云]()
-- [Github]()
+- [Helloworld]()
+
+# 4 `Kotlin`版
+
+- [Github](https://github.com/2293736867/SpringBootDemoKotlin)
+- [码云](https://gitee.com/u6b7b5fc3/SpringBootDemoKotlin)
 
 
-# 4 如果
+# 5 后记
 
 如果觉得对您有帮助可以点个`star`或者关注一下笔者的微信公众号：
 
