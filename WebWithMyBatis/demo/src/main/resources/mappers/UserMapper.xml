@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo.dao.UserMapper">
+    <insert id="insert">
+        INSERT INTO `user` (`id`,`username`,`password`)
+        VALUES (#{user.id},#{user.username},#{user.password})
+    </insert>
+
+    <update id="update">
+        UPDATE `user` set `username`=#{user.username} , `password`=#{user.password} where id=#{user.id}
+    </update>
+
+    <delete id="deleteById">
+        DELETE FROM `user` WHERE `id` = #{id}
+    </delete>
+</mapper>
