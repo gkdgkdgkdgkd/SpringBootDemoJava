@@ -1,6 +1,6 @@
-# 1 这是什么
+# 1 Spring Boot demo
 
-`Spring Boot`入门级别`Demo`。
+该仓库是`Spring Boot`的各种`Demo`合集。
 
 # 2 环境
 
@@ -11,6 +11,7 @@
 # 3 目前已实现
 
 - [Helloworld](https://github.com/2293736867/SpringBootDemoJava/tree/master/DemoHelloworld)
+- [WebWithMyBatis](https://github.com/2293736867/SpringBootDemoJava/tree/master/WebWithMyBatis)
 
 # 4 `Kotlin`版
 
