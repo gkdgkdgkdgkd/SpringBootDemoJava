@@ -7,6 +7,7 @@
 - `OpenJDK 11.0.8`
 - `IDEA 2020.2`
 - `Manjaro`
+- `Maven3`
 
 # 3 目前已实现
 
