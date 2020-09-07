@@ -1,11 +1,11 @@
 # 1 Spring Boot demo
 
-该仓库是`Spring Boot`的各种`Demo`合集。
+该仓库是`Spring Boot`的各种`Demo`合集，使用`Java`实现。
 
 # 2 环境
 
 - `OpenJDK 11.0.8`
-- `IDEA 2020.2`
+- `IDEA 2020.2`（请安装`lombok`插件）
 - `Manjaro`
 - `Maven3`
 
@@ -21,7 +21,7 @@
 - [码云](https://gitee.com/u6b7b5fc3/SpringBootDemoKotlin)
 
 
-# 5 后记
+# 5 其他
 
 如果觉得对您有帮助可以点个`star`或者关注一下笔者的微信公众号：
 
