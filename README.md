@@ -12,7 +12,8 @@
 # 3 目前已实现
 
 - [Helloworld](https://github.com/2293736867/SpringBootDemoJava/tree/master/DemoHelloworld)
-- [WebWithMyBatis](https://github.com/2293736867/SpringBootDemoJava/tree/master/WebWithMyBatis)
+- [Spring Web + MyBatis](https://github.com/2293736867/SpringBootDemoJava/tree/master/WebWithMyBatis)
+- [Spring Web + MyBaits Plus](https://github.com/2293736867/SpringBootDemoJava/tree/master/WebWithMyBatisPlus)
 
 # 4 `Kotlin`版
 
