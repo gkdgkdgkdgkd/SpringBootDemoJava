@@ -17,6 +17,7 @@
 - [Hibernate Validator](https://github.com/2293736867/SpringBootDemoJava/tree/master/HibernateValidator)
 - [Docker部署](https://github.com/2293736867/SpringBootDemoJava/tree/master/Docker)
 - [HTTPS](https://github.com/2293736867/SpringBootDemoJava/tree/master/HTTPS)
+- [Mail](https://github.com/2293736867/SpringBootDemoJava/tree/master/Mail)
 
 # 4 `Kotlin`版
 
