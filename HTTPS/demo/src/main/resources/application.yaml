@@ -1,0 +1,5 @@
+server:
+  ssl:
+    key-store-type: PKCS12
+    key-store-password: xxxxxx
+    key-store: classpath:crt/1.pfx
