@@ -16,6 +16,7 @@
 - [Spring Web + MyBaits Plus](https://github.com/2293736867/SpringBootDemoJava/tree/master/WebWithMyBatisPlus)
 - [Hibernate Validator](https://github.com/2293736867/SpringBootDemoJava/tree/master/HibernateValidator)
 - [Docker部署](https://github.com/2293736867/SpringBootDemoJava/tree/master/Docker)
+- [HTTPS](https://github.com/2293736867/SpringBootDemoJava/tree/master/HTTPS)
 
 # 4 `Kotlin`版
 
