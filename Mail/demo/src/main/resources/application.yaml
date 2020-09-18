@@ -1,0 +1,19 @@
+spring:
+  mail:
+    host: smtp.qq.com
+    username: ENC(H8CieQ9LwxJ4cpXn0T4q15ij9c9qowXoCEqtgEb1rm7H4DfyX2AunjUTekyEWxpm)
+    password: ENC(3xonbKZUajFY6pqoTS2+wY52CjtQHVqpB+AdKou/gex/v5FdT9NdZX4/Fm8XdwFZ)
+    port: 465
+    properties:
+      mail:
+        smtp:
+          ssl:
+            enable: true
+          auth: true
+          starttls:
+            enable: true
+            required: true
+
+jasypt:
+  encryptor:
+    password: test
