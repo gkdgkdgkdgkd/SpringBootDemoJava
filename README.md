@@ -19,6 +19,7 @@
 - [HTTPS](https://github.com/2293736867/SpringBootDemoJava/tree/master/HTTPS)
 - [Mail](https://github.com/2293736867/SpringBootDemoJava/tree/master/Mail)
 - [Swagger](https://github.com/2293736867/SpringBootDemoJava/tree/master/Swagger)
+- [Jasypt](https://github.com/2293736867/SpringBootDemoJava/tree/master/Jasypt)
 
 # 4 `Java`版
 
