@@ -4,10 +4,9 @@
 
 # 2 环境
 
-- `OpenJDK 11.0.8`
-- `IDEA 2020.2`（请安装`lombok`插件）
-- `Manjaro`
-- `Maven3`
+- `OpenJDK 11.0.10`
+- `IDEA 2020.3.2`
+- `Maven 3.6.3`
 
 # 3 目前已实现
 
@@ -20,14 +19,15 @@
 - [Mail](https://github.com/2293736867/SpringBootDemoJava/tree/master/Mail)
 - [Swagger](https://github.com/2293736867/SpringBootDemoJava/tree/master/Swagger)
 - [Jasypt](https://github.com/2293736867/SpringBootDemoJava/tree/master/Jasypt)
+- [Redis缓存](https://github.com/2293736867/SpringBootDemoJava/tree/master/RedisCache)
 
-# 4 `Java`版
+# 4 `Java`版实现其他地址
 
 - [Github](https://github.com/2293736867/SpringBootDemoJava)
 - [码云](https://gitee.com/u6b7b5fc3/SpringBootDemoJava)
 - [CODE.CHINA](https://codechina.csdn.net/qq_27525611/SpringBootDemoJava)
 
-# 5 `Kotlin`版
+# 5 `Kotlin`版实现
 
 - [Github](https://github.com/2293736867/SpringBootDemoKotlin)
 - [码云](https://gitee.com/u6b7b5fc3/SpringBootDemoKotlin)
