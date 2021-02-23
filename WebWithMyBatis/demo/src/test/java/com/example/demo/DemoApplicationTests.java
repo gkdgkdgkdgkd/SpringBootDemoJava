@@ -14,30 +14,22 @@ class DemoApplicationTests {
     private final Service service;
 
     @Test
-    void contextLoads() {
-    }
-
-    @Test
-    void select()
-    {
+    void select() {
         System.out.println(service.select("1"));
     }
 
     @Test
-    void selectAll()
-    {
+    void selectAll() {
         service.selectAll().forEach(System.out::println);
     }
 
     @Test
-    void delete()
-    {
+    void delete() {
         service.delete("3");
     }
 
     @Test
-    void save()
-    {
-        service.save(new User("3","username3","password3"));
+    void save() {
+        service.save(new User("3", "username3", "password3"));
     }
 }
