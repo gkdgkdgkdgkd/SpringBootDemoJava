@@ -4,8 +4,8 @@
 
 # 2 环境
 
-- `OpenJDK 11.0.10`
-- `IDEA 2020.3.2`
+- `OpenJDK 11.0.11`
+- `IDEA 2021.1.2`
 - `Maven 3.6.3`
 
 # 3 目前已实现
@@ -20,6 +20,7 @@
 - [Swagger](https://github.com/2293736867/SpringBootDemoJava/tree/master/Swagger)
 - [Jasypt](https://github.com/2293736867/SpringBootDemoJava/tree/master/Jasypt)
 - [Redis缓存](https://github.com/2293736867/SpringBootDemoJava/tree/master/RedisCache)
+- [MyBatis Plus Generator](https://github.com/2293736867/SpringBootDemoJava/tree/main/MyBatisPlusGenerator)
 
 # 4 `Java`版实现其他地址
 
@@ -32,7 +33,6 @@
 - [Github](https://github.com/2293736867/SpringBootDemoKotlin)
 - [码云](https://gitee.com/u6b7b5fc3/SpringBootDemoKotlin)
 - [CODE.CHINA](https://codechina.csdn.net/qq_27525611/SpringBootDemoKotlin)
-
 
 # 6 其他
 
