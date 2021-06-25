@@ -1,0 +1,26 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/test
+    username: root
+    password: 123456
+  shardingsphere:
+    datasource:
+      names: master,slave
+      master:
+        type: com.alibaba.druid.pool.DruidDataSource
+        url: jdbc:mysql://127.0.0.1:3306/test
+        username: root
+        password: 123456
+      slave:
+        type: com.alibaba.druid.pool.DruidDataSource
+        url: jdbc:mysql://127.0.0.1:3307/test
+        username: root
+        password: 123456
+    masterslave:
+      load-balance-algorithm-type: round_robin
+      name: ms
+      master-data-source-name: master
+      slave-data-source-names: slave
+    props:
+      sql:
+        show: true
