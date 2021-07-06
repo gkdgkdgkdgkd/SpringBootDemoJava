@@ -21,7 +21,8 @@
 - [Jasypt](https://github.com/2293736867/SpringBootDemoJava/tree/master/Jasypt)
 - [Redis缓存](https://github.com/2293736867/SpringBootDemoJava/tree/master/RedisCache)
 - [MyBatis Plus Generator](https://github.com/2293736867/SpringBootDemoJava/tree/main/MyBatisPlusGenerator)
-- [ShardingSphere + MyBatis Plus + MySQL 读写分离和主从复制](https://github.com/2293736867/SpringBootDemoJava/tree/main/ShardingSphereMyBaitsPlusMySQLMasterSlave)
+- [ShardingSphere + MyBatis Plus + MySQL
+  读写分离和主从复制](https://github.com/2293736867/SpringBootDemoJava/tree/main/ShardingSphereMyBatisPlusMySQLMasterSlave)
 
 # 4 `Java`版实现其他地址
 
