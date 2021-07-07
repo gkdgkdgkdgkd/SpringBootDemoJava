@@ -1,0 +1,48 @@
+spring:
+  shardingsphere:
+    datasource:
+      names: master-test0,master-test1,slave-test0,slave-test1
+      master-test0:
+        type: com.alibaba.druid.pool.DruidDataSource
+        url: jdbc:mysql://127.0.0.1:3306/test0
+        username: root
+        password: 123456
+      master-test1:
+        type: com.alibaba.druid.pool.DruidDataSource
+        url: jdbc:mysql://127.0.0.1:3306/test1
+        username: root
+        password: 123456
+      slave-test0:
+        type: com.alibaba.druid.pool.DruidDataSource
+        url: jdbc:mysql://127.0.0.1:3307/test0
+        username: root
+        password: 123456
+      slave-test1:
+        type: com.alibaba.druid.pool.DruidDataSource
+        url: jdbc:mysql://127.0.0.1:3307/test1
+        username: root
+        password: 123456
+    sharding:
+      default-database-strategy:
+        inline:
+          sharding-column: age
+          algorithm-expression: master-test$->{age % 2}
+      tables:
+        user:
+          actual-data-nodes: master-test$->{0..1}.user$->{0..2}
+          table-strategy:
+            inline:
+              sharding-column: id
+              algorithm-expression: user$->{id%3}
+
+      master-slave-rules:
+        master-test0:
+          master-datasource-name: master-test0
+          slave-data-source-names: slave-test0
+        master-test1:
+          master-datasource-name: master-test1
+          slave-data-source-names: slave-test1
+    props:
+      sql:
+        show:
+          true
