@@ -24,18 +24,19 @@
 - [ShardingSphere + MyBatis Plus + MySQL
   读写分离和主从复制](https://github.com/2293736867/SpringBootDemoJava/tree/main/ShardingSphereMyBatisPlusMySQLMasterSlave)
 - [ShardingSphere + MyBaits Plus + MySQL 分库分表](https://github.com/2293736867/SpringBootDemoJava/tree/main/ShardingSphereMyBatisPlusDataSharding)
+- [ShardingSphere + MyBatis Plus + MySQL 分库分表 + 读写分离](https://github.com/2293736867/SpringBootDemoJava/tree/main/ShardingSphereMyBatisPlusDataShardingAndReadWriteSplitting)
 
 # 4 `Java`版实现其他地址
 
 - [Github](https://github.com/2293736867/SpringBootDemoJava)
 - [码云](https://gitee.com/u6b7b5fc3/SpringBootDemoJava)
-- [CODE.CHINA](https://codechina.csdn.net/qq_27525611/SpringBootDemoJava)
+- [CODE CHINA](https://codechina.csdn.net/qq_27525611/SpringBootDemoJava)
 
 # 5 `Kotlin`版实现
 
 - [Github](https://github.com/2293736867/SpringBootDemoKotlin)
 - [码云](https://gitee.com/u6b7b5fc3/SpringBootDemoKotlin)
-- [CODE.CHINA](https://codechina.csdn.net/qq_27525611/SpringBootDemoKotlin)
+- [CODE CHINA](https://codechina.csdn.net/qq_27525611/SpringBootDemoKotlin)
 
 # 6 其他
 
