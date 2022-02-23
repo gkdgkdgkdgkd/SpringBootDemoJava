@@ -28,18 +28,12 @@
 
 # 4 `Java`版实现其他地址
 
-- [Github](https://github.com/2293736867/SpringBootDemoJava)
-- [码云](https://gitee.com/u6b7b5fc3/SpringBootDemoJava)
-- [CODE CHINA](https://codechina.csdn.net/qq_27525611/SpringBootDemoJava)
+- [Github](https://github.com/gkdgkdgkdgkd/SpringBootDemoJava)
+- [码云](https://gitee.com/jskdhfjksdhfjk/SpringBootDemoJava)
+- [GitCode](https://gitcode.net/qq_27525611/SpringBootDemoJava)
 
 # 5 `Kotlin`版实现
 
-- [Github](https://github.com/2293736867/SpringBootDemoKotlin)
-- [码云](https://gitee.com/u6b7b5fc3/SpringBootDemoKotlin)
-- [CODE CHINA](https://codechina.csdn.net/qq_27525611/SpringBootDemoKotlin)
-
-# 6 其他
-
-如果觉得对您有帮助可以点个`star`或者关注一下笔者的微信公众号：
-
-![](https://img-blog.csdnimg.cn/20200806194605566.gif)
+- [Github](https://github.com/gkdgkdgkdgkd/SpringBootDemoKotlin)
+- [码云](https://gitee.com/jskdhfjksdhfjk/SpringBootDemoKotlin)
+- [GitCode](https://gitcode.net/qq_27525611/SpringBootDemoKotlin)
