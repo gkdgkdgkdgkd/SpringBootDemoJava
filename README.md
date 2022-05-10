@@ -2,10 +2,11 @@
 
 该仓库是`Spring Boot`的各种`Demo`合集，使用`Java`实现。
 
+此分支是旧版本的Maven分支，新版本采用Gradle管理。
+
 # 2 环境
 
 - `OpenJDK 11.0.11`
-- `IDEA 2021.1.2`
 - `Maven 3.6.3`
 
 # 3 目前已实现
