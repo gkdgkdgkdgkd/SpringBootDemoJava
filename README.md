@@ -2,6 +2,8 @@
 
 该仓库是`Spring Boot`的各种`Demo`合集，使用`Java`实现。
 
+如果使用`Maven`可以参考旧分支`maven`，但是相关代码并没有更新。
+
 # 2 环境
 
 - `OpenJDK 17.0.3+`
@@ -9,8 +11,8 @@
 
 # 3 目前已实现
 
-- [Helloworld](https://github.com/2293736867/SpringBootDemoJava/tree/master/DemoHelloworld)
-- [Spring Web + MyBaits Plus](https://github.com/2293736867/SpringBootDemoJava/tree/master/WebWithMyBatisPlus)
+- [Helloworld](https://github.com/gkdgkdgkdgkd/SpringBootDemoJava/tree/main/DemoHelloworld)
+- [Spring Web + MyBaits Plus](https://github.com/gkdgkdgkdgkd/SpringBootDemoJava/tree/main/WebWithMyBatisPlus)
 - [Hibernate Validator](https://github.com/2293736867/SpringBootDemoJava/tree/master/HibernateValidator)
 - [Docker部署](https://github.com/2293736867/SpringBootDemoJava/tree/master/Docker)
 - [HTTPS](https://github.com/2293736867/SpringBootDemoJava/tree/master/HTTPS)
