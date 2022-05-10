@@ -11,28 +11,24 @@ import org.springframework.boot.test.context.SpringBootTest;
 @RequiredArgsConstructor(onConstructor = @__(@Autowired))
 public class MyBatisPlusMapperTests {
     private final MyBatisPlusMapper myBatisPlusMapper;
+
     @Test
-    void save()
-    {
-        myBatisPlusMapper.save(new User("4","4444","5555"));
+    void save() {
+        myBatisPlusMapper.save(new User(4L, "Mapper-username", "Mapper-password"));
     }
 
     @Test
-    void delete()
-    {
-        myBatisPlusMapper.delete("3");
+    void delete() {
+        myBatisPlusMapper.delete(3L);
     }
 
     @Test
-    void select()
-    {
-        System.out.println(myBatisPlusMapper.select("1"));
+    void select() {
+        System.out.println(myBatisPlusMapper.select(1L));
     }
 
     @Test
-    void selectAll()
-    {
+    void selectAll() {
         myBatisPlusMapper.selectAll().forEach(System.out::println);
     }
-
 }

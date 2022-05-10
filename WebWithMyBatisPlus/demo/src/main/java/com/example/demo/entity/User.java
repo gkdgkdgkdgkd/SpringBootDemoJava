@@ -1,19 +1,12 @@
 package com.example.demo.entity;
 
 import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.Data;
 
-@Getter
-@Setter
+@Data
 @AllArgsConstructor
 public class User {
-    private String id;
+    private Long id;
     private String username;
     private String password;
-    @Override
-    public String toString()
-    {
-        return "id:"+id+"\nusername:"+username+"\npassword:"+password+"\n";
-    }
 }
