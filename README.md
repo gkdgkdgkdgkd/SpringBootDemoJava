@@ -4,14 +4,12 @@
 
 # 2 环境
 
-- `OpenJDK 11.0.11`
-- `IDEA 2021.1.2`
-- `Maven 3.6.3`
+- `OpenJDK 17.0.3+`
+- `Gradle 7.4.1+`
 
 # 3 目前已实现
 
 - [Helloworld](https://github.com/2293736867/SpringBootDemoJava/tree/master/DemoHelloworld)
-- [Spring Web + MyBatis](https://github.com/2293736867/SpringBootDemoJava/tree/master/WebWithMyBatis)
 - [Spring Web + MyBaits Plus](https://github.com/2293736867/SpringBootDemoJava/tree/master/WebWithMyBatisPlus)
 - [Hibernate Validator](https://github.com/2293736867/SpringBootDemoJava/tree/master/HibernateValidator)
 - [Docker部署](https://github.com/2293736867/SpringBootDemoJava/tree/master/Docker)
