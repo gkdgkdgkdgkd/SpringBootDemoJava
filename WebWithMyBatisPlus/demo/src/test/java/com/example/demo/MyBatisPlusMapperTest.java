@@ -1,7 +1,7 @@
 package com.example.demo;
 
 import com.example.demo.entity.User;
-import com.example.demo.service.MyBatisPlusIService;
+import com.example.demo.service.MyBatisPlusMapper;
 import lombok.RequiredArgsConstructor;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -9,27 +9,26 @@ import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
 @RequiredArgsConstructor(onConstructor = @__(@Autowired))
-class MyBatisPlusIServiceTests {
-    private final MyBatisPlusIService myBatisPlusIService;
+public class MyBatisPlusMapperTest {
+    private final MyBatisPlusMapper myBatisPlusMapper;
 
     @Test
     void save() {
-        myBatisPlusIService.save(new User(4L, "IService-username", "IService-passwod"));
+        myBatisPlusMapper.save(new User(4L, "Mapper-username", "Mapper-password"));
     }
 
     @Test
     void delete() {
-        myBatisPlusIService.delete(4L);
+        myBatisPlusMapper.delete(3L);
     }
 
     @Test
     void select() {
-        System.out.println(myBatisPlusIService.select(1L));
+        System.out.println(myBatisPlusMapper.select(1L));
     }
 
     @Test
     void selectAll() {
-        myBatisPlusIService.selectAll().forEach(System.out::println);
+        myBatisPlusMapper.selectAll().forEach(System.out::println);
     }
-
 }
