@@ -13,7 +13,7 @@
 
 - [Helloworld](https://github.com/gkdgkdgkdgkd/SpringBootDemoJava/tree/main/DemoHelloworld)
 - [Spring Web + MyBaits Plus](https://github.com/gkdgkdgkdgkd/SpringBootDemoJava/tree/main/WebWithMyBatisPlus)
-- [Hibernate Validator](https://github.com/2293736867/SpringBootDemoJava/tree/master/HibernateValidator)
+- [Hibernate Validator](https://github.com/gkdgkdgkdgkd/SpringBootDemoJava/tree/main/HibernateValidator)
 - [Docker部署](https://github.com/2293736867/SpringBootDemoJava/tree/master/Docker)
 - [HTTPS](https://github.com/2293736867/SpringBootDemoJava/tree/master/HTTPS)
 - [Mail](https://github.com/2293736867/SpringBootDemoJava/tree/master/Mail)
