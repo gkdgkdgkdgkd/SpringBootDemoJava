@@ -1,5 +1,14 @@
-# `Docker`部署`Demo`
+# 内容
 
-[博客](https://blog.csdn.net/qq_27525611/article/details/108571663)
+`Docker`部署。
 
-注意该`Demo`使用的服务器架构为`aarch64`而不是常见的`x86`，请注意对应修改基础镜像（`Dockerfile`中的`FROM`）。
+# 环境
+
+- `Docker 20.10.14`
+- `OpenJDK 17`镜像
+
+# 博客
+
+[地址](https://blog.csdn.net/qq_27525611/article/details/108571663)
+
+注意博客中的服务器已经不再使用，因此`Dockerfile`中的`JDK`改为`x86`的`OpenJDK 17.0.2`
