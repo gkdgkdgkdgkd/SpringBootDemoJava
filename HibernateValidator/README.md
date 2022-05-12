@@ -7,7 +7,7 @@
 - 基本使用（包`base`）
 - 快速失败（包`failfast`）
 - 组序列（包`group`）
-- 自定义注解（包`customed`）
+- 自定义注解（包`custom`）
 - AOP（包`aop`）
 
 # 环境

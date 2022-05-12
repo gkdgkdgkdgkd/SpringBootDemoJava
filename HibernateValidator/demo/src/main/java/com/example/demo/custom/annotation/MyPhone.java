@@ -1,4 +1,6 @@
-package com.example.demo.customed.annotation;
+package com.example.demo.custom.annotation;
+
+import com.example.demo.custom.validator.MyPhoneValidator;
 
 import javax.validation.Constraint;
 import javax.validation.Payload;

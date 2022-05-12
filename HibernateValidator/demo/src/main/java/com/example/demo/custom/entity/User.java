@@ -1,6 +1,6 @@
-package com.example.demo.customed.entity;
+package com.example.demo.custom.entity;
 
-import com.example.demo.customed.annotation.MyPhone;
+import com.example.demo.custom.annotation.MyPhone;
 import lombok.Getter;
 import lombok.Setter;
 
