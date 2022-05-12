@@ -1,6 +1,6 @@
 # 内容
 
-`Docker`部署。
+`Docker`部署。`build`文件夹包含了`JAR`以及`Dockerfile`，直接在该文件夹下执行`docker build`即可。
 
 # 环境
 

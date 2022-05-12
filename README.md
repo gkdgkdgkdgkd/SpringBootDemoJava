@@ -1,4 +1,4 @@
-# 1 Spring Boot demo
+# 1 Spring Boot Demo
 
 该仓库是`Spring Boot`的各种`Demo`合集，使用`Java`实现。
 
@@ -8,6 +8,8 @@
 
 - `OpenJDK 17.0.3+`
 - `Gradle 7.4.1+`
+
+各个`Demo`的一些额外环境可以查看各个`Demo`的`README.md`。
 
 # 3 目前已实现
 
