@@ -17,7 +17,7 @@
 - [Spring Web + MyBaits Plus](https://github.com/gkdgkdgkdgkd/SpringBootDemoJava/tree/main/WebWithMyBatisPlus)
 - [Hibernate Validator](https://github.com/gkdgkdgkdgkd/SpringBootDemoJava/tree/main/HibernateValidator)
 - [Docker部署](https://github.com/gkdgkdgkdgkd/SpringBootDemoJava/tree/main/Docker)
-- [Mail](https://github.com/2293736867/SpringBootDemoJava/tree/master/Mail)
+- [Mail](https://github.com/gkdgkdgkdgkd/SpringBootDemoJava/tree/main/Mail)
 - [Swagger](https://github.com/2293736867/SpringBootDemoJava/tree/master/Swagger)
 - [Jasypt](https://github.com/2293736867/SpringBootDemoJava/tree/master/Jasypt)
 - [Redis缓存](https://github.com/2293736867/SpringBootDemoJava/tree/master/RedisCache)
