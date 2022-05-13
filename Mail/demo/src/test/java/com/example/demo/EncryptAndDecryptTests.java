@@ -9,7 +9,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
 @RequiredArgsConstructor(onConstructor = @__(@Autowired))
-public class EncryptAndDecrypt {
+public class EncryptAndDecryptTests {
     private final StringEncryptor encryptor;
     @Value("${spring.mail.username}")
     private String username;

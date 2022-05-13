@@ -1,8 +1,5 @@
 package com.example.demo;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.mail.javamail.JavaMailSender;
-
 import javax.mail.MessagingException;
 import java.nio.file.Path;
 

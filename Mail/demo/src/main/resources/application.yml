@@ -1,8 +1,8 @@
 spring:
   mail:
     host: smtp.qq.com
-    username: ENC(H8CieQ9LwxJ4cpXn0T4q15ij9c9qowXoCEqtgEb1rm7H4DfyX2AunjUTekyEWxpm)
-    password: ENC(3xonbKZUajFY6pqoTS2+wY52CjtQHVqpB+AdKou/gex/v5FdT9NdZX4/Fm8XdwFZ)
+    username: ENC(pcwk0OeluFhpizIVvxYTR5O+K25C3n89WSnHwijluDSMqXO+xeSEBB2wEJZ6heJ2)
+    password: ENC(v6vNaa+Iabtt+Ji/6WzYQ+vjALohF12JBR/hGYSslJtwuHUJ3YpnRgYdkggxy7G8)
     port: 465
     properties:
       mail:
@@ -14,6 +14,6 @@ spring:
             enable: true
             required: true
 
-jasypt:
-  encryptor:
-    password: test
+#jasypt:
+#  encryptor:
+#    password: test
