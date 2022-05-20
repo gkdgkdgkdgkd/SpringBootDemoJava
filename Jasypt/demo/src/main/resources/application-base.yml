@@ -1,0 +1,5 @@
+jasypt:
+  encryptor:
+    password: test
+plain: value
+cipher: ENC(jdeY2nOpGvgtuhtejHH+xRnDObbkQQ9Jz9WnvpF86GcsDy004TbRvG3ZFh1TxDq/)

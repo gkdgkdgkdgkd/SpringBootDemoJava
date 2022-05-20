@@ -1,0 +1,5 @@
+jasypt:
+  encryptor:
+    bean: customEncryptor
+plain: value
+cipher: value111
