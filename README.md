@@ -6,7 +6,7 @@
 
 # 2 环境
 
-- `Spring Boot 2.7.0+`
+- `Spring Boot 2.6.8+`
 - `OpenJDK 17.0.3+`
 - `Gradle 7.4.1+`
 
