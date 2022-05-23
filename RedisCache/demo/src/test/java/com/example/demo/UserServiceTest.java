@@ -27,6 +27,7 @@ class UserServiceTest {
     @Test
     public void delete() {
         System.out.println(service.delete(1L));
+        System.out.println(service.delete(1L));
     }
 
     @Test

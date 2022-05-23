@@ -15,7 +15,7 @@ public class RedisTest {
     private final RedisTemplate<String, User> redisTemplate;
 
     @Test
-    public void get() {
+    public void redisTemplateTest() {
         final String KEY = "key";
         stringRedisTemplate.opsForValue().set(KEY, "value");
         System.out.println(KEY + " -> " + stringRedisTemplate.opsForValue().get(KEY));
