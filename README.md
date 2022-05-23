@@ -22,7 +22,7 @@
 - [Swagger](https://github.com/gkdgkdgkdgkd/SpringBootDemoJava/tree/main/Swagger)
 - [Jasypt](https://github.com/gkdgkdgkdgkd/SpringBootDemoJava/tree/main/Jasypt)
 - [Redis缓存](https://github.com/gkdgkdgkdgkd/SpringBootDemoJava/tree/main/RedisCache)
-- [MyBatis Plus Generator](https://github.com/2293736867/SpringBootDemoJava/tree/main/MyBatisPlusGenerator)
+- [MyBatis Plus Generator](https://github.com/gkdgkdgkdgkd/SpringBootDemoJava/tree/main/MyBatisPlusGenerator)
 - [ShardingSphere + MyBatis Plus + MySQL
   读写分离和主从复制](https://github.com/2293736867/SpringBootDemoJava/tree/main/ShardingSphereMyBatisPlusMySQLMasterSlave)
 - [ShardingSphere + MyBaits Plus + MySQL 分库分表](https://github.com/2293736867/SpringBootDemoJava/tree/main/ShardingSphereMyBatisPlusDataSharding)
