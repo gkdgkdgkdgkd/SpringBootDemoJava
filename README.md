@@ -23,8 +23,8 @@
 - [Jasypt](https://github.com/gkdgkdgkdgkd/SpringBootDemoJava/tree/main/Jasypt)
 - [Redis缓存](https://github.com/gkdgkdgkdgkd/SpringBootDemoJava/tree/main/RedisCache)
 - [MyBatis Plus Generator](https://github.com/gkdgkdgkdgkd/SpringBootDemoJava/tree/main/MyBatisPlusGenerator)
-- [ShardingSphere + MyBatis Plus + MySQL
-  读写分离和主从复制](https://github.com/2293736867/SpringBootDemoJava/tree/main/ShardingSphereMyBatisPlusMySQLMasterSlave)
+- [ShardingSphereJDBC + MyBatis Plus + MySQL
+  读写分离和主从复制](https://github.com/gkdgkdgkdgkd/SpringBootDemoJava/tree/main/ShardingSphereJDBCReadWriteSplitting)
 - [ShardingSphere + MyBaits Plus + MySQL 分库分表](https://github.com/2293736867/SpringBootDemoJava/tree/main/ShardingSphereMyBatisPlusDataSharding)
 - [ShardingSphere + MyBatis Plus + MySQL 分库分表 + 读写分离](https://github.com/2293736867/SpringBootDemoJava/tree/main/ShardingSphereMyBatisPlusDataShardingAndReadWriteSplitting)
 
