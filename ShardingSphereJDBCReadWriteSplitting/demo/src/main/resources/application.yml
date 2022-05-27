@@ -1,0 +1,30 @@
+spring:
+  shardingsphere:
+    mode:
+      type: Memory # 内存模式
+    datasource:
+      names: master,slave
+      master:
+        type: com.alibaba.druid.pool.DruidDataSource
+        url: jdbc:mysql://127.0.0.1:3306/test # 按照官网文档写的jdbc-url就会提示"url not set"
+        username: root
+        password: 123456
+      slave:
+        type: com.alibaba.druid.pool.DruidDataSource
+        url: jdbc:mysql://127.0.0.1:3306/test
+        username: root
+        password: 123456
+    rules:
+      readwrite-splitting:
+        data-sources:
+          random: # 随便  真不知道为什么还要多配这一层
+            type: Static
+            load-balancer-name: round_robin
+            props:
+              write-data-source-name: master
+              read-data-source-names: slave
+        load-balancers:
+          round_robin:
+            type: ROUND_ROBIN
+    props:
+      sql-show: true
