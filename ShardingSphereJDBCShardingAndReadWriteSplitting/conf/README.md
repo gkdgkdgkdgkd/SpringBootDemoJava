@@ -1,4 +1,4 @@
-# MySQL 配置文件
+# `MySQL` 配置文件
 
 - `master.cnf`是主节点的配置文件
 - `slave.cnf`是从节点的配置文件

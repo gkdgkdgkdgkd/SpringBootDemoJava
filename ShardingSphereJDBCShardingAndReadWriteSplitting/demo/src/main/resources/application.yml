@@ -1,48 +1,74 @@
 spring:
   shardingsphere:
+    mode:
+      type: Memory                                                   # ????????????????
     datasource:
-      names: master-test0,master-test1,slave-test0,slave-test1
-      master-test0:
-        type: com.alibaba.druid.pool.DruidDataSource
-        url: jdbc:mysql://127.0.0.1:3306/test0
+      names: master-test$->{0..1},slave-test$->{0..1}
+      master-test0:                                                  # ?????????
+        type: com.alibaba.druid.pool.DruidDataSource                 # ???
+        url: jdbc:mysql://127.0.0.1:3306/test0                       # ??url
         username: root
         password: 123456
-      master-test1:
+      master-test1:                                                  # ?????????
         type: com.alibaba.druid.pool.DruidDataSource
         url: jdbc:mysql://127.0.0.1:3306/test1
         username: root
         password: 123456
-      slave-test0:
+      slave-test0:                                                   # ?????????
         type: com.alibaba.druid.pool.DruidDataSource
         url: jdbc:mysql://127.0.0.1:3307/test0
         username: root
         password: 123456
-      slave-test1:
+      slave-test1:                                                   # ?????????
         type: com.alibaba.druid.pool.DruidDataSource
         url: jdbc:mysql://127.0.0.1:3307/test1
         username: root
         password: 123456
-    sharding:
-      default-database-strategy:
-        inline:
-          sharding-column: age
-          algorithm-expression: master-test$->{age % 2}
-      tables:
-        user:
-          actual-data-nodes: master-test$->{0..1}.user$->{0..2}
-          table-strategy:
-            inline:
-              sharding-column: id
-              algorithm-expression: user$->{id%3}
 
-      master-slave-rules:
-        master-test0:
-          master-datasource-name: master-test0
-          slave-data-source-names: slave-test0
-        master-test1:
-          master-datasource-name: master-test1
-          slave-data-source-names: slave-test1
+    rules:                                                           # ???????????????
+      sharding:                                                      # ????????
+        tables:
+          user:                                                      # ????????????
+            actual-data-nodes: master-test$->{0..1}.user$->{0..2}    # ?????????? ??$->{0..n1}.??$->{0..n2}
+                                                                     # ??n1?n2??????-1????-1
+                                                                     # ?????${0..n1}????????Spring?????????
+                                                                     # ????$->{0..n1}???
+
+            database-strategy:                                       # ????
+              standard:                                              # ??????
+                sharding-column: age                                 # ????
+                sharding-algorithm-name: age-mod                     # ??????
+            table-strategy:                                          # ????
+              standard:                                              # ??????
+                sharding-column: id                                  # ????
+                sharding-algorithm-name: id-mod                      # ??????
+
+        sharding-algorithms:                                         # ??????????
+          age-mod:                                                   # ??????
+            type: MOD                                                # ???????
+            props:                                                   # ??????????????????props?
+              sharding-count: 2                                      # ????
+          id-mod:                                                    # ??????
+            type: MOD                                                # ???????
+            props:                                                   # ??????????????????props?
+              sharding-count: 3                                      # ????
+
+      readwrite-splitting:                                           # ????????
+        data-sources:                                                # ???
+          master-test0:                                              # ???????????????????????????test0???
+            type: Static                                             # ????
+            load-balancer-name: round_robin                          # ????????
+            props:                                                   # ????????????props?
+              write-data-source-name: master-test0                   # ????
+              read-data-source-names: slave-test0                    # ????
+          master-test1:
+            type: Static                                             # ????
+            load-balancer-name: round_robin                          # ????????
+            props:                                                   # ????????????props?
+              write-data-source-name: master-test1                   # ????
+              read-data-source-names: slave-test1                    # ????
+        load-balancers:                                              # ??????
+          round_robin:                                               # ??????????????
+            type: ROUND_ROBIN                                        # ??????
     props:
-      sql:
-        show:
-          true
+      sql-show: true                                                 # ??SQL
