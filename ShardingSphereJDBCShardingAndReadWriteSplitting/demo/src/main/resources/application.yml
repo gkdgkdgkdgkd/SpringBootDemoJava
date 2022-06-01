@@ -1,74 +1,74 @@
 spring:
   shardingsphere:
     mode:
-      type: Memory                                                   # ????????????????
+      type: Memory                                                   # 内存模式，元数据保存在当前进程中
     datasource:
       names: master-test$->{0..1},slave-test$->{0..1}
-      master-test0:                                                  # ?????????
-        type: com.alibaba.druid.pool.DruidDataSource                 # ???
-        url: jdbc:mysql://127.0.0.1:3306/test0                       # ??url
+      master-test0:                                                  # 跟上面的数据源对应
+        type: com.alibaba.druid.pool.DruidDataSource                 # 连接池
+        url: jdbc:mysql://127.0.0.1:3306/test0                       # 连接url
         username: root
         password: 123456
-      master-test1:                                                  # ?????????
+      master-test1:                                                  # 跟上面的数据源对应
         type: com.alibaba.druid.pool.DruidDataSource
         url: jdbc:mysql://127.0.0.1:3306/test1
         username: root
         password: 123456
-      slave-test0:                                                   # ?????????
+      slave-test0:                                                   # 跟上面的数据源对应
         type: com.alibaba.druid.pool.DruidDataSource
         url: jdbc:mysql://127.0.0.1:3307/test0
         username: root
         password: 123456
-      slave-test1:                                                   # ?????????
+      slave-test1:                                                   # 跟上面的数据源对应
         type: com.alibaba.druid.pool.DruidDataSource
         url: jdbc:mysql://127.0.0.1:3307/test1
         username: root
         password: 123456
 
-    rules:                                                           # ???????????????
-      sharding:                                                      # ????????
+    rules:                                                           # 配置分库分表以及读写分离的规则
+      sharding:                                                      # 配置分库分表规则
         tables:
-          user:                                                      # ????????????
-            actual-data-nodes: master-test$->{0..1}.user$->{0..2}    # ?????????? ??$->{0..n1}.??$->{0..n2}
-                                                                     # ??n1?n2??????-1????-1
-                                                                     # ?????${0..n1}????????Spring?????????
-                                                                     # ????$->{0..n1}???
+          user:                                                      # 这个可以随便取，问题不大
+            actual-data-nodes: master-test$->{0..1}.user$->{0..2}    # 实际节点名称，格式为 库名$->{0..n1}.表名$->{0..n2}
+                                                                     # 其中n1、n2分别为库数量-1和表数量-1
+                                                                     # 也可以使用${0..n1}的形式，但是会与Spring属性文件占位符冲突
+                                                                     # 所以使用$->{0..n1}的形式
 
-            database-strategy:                                       # ????
-              standard:                                              # ??????
-                sharding-column: age                                 # ????
-                sharding-algorithm-name: age-mod                     # ??????
-            table-strategy:                                          # ????
-              standard:                                              # ??????
-                sharding-column: id                                  # ????
-                sharding-algorithm-name: id-mod                      # ??????
+            database-strategy:                                       # 分库策略
+              standard:                                              # 标准分库策略
+                sharding-column: age                                 # 分库列名
+                sharding-algorithm-name: age-mod                     # 分库算法名字
+            table-strategy:                                          # 分表策略
+              standard:                                              # 标准分表策略
+                sharding-column: id                                  # 分表列名
+                sharding-algorithm-name: id-mod                      # 分表算法名字
 
-        sharding-algorithms:                                         # ??????????
-          age-mod:                                                   # ??????
-            type: MOD                                                # ???????
-            props:                                                   # ??????????????????props?
-              sharding-count: 2                                      # ????
-          id-mod:                                                    # ??????
-            type: MOD                                                # ???????
-            props:                                                   # ??????????????????props?
-              sharding-count: 3                                      # ????
+        sharding-algorithms:                                         # 配置分库和分表的算法
+          age-mod:                                                   # 分库算法名字
+            type: MOD                                                # 算法类型为取模
+            props:                                                   # 算法配置的键名，所有算法配置都需要在props下
+              sharding-count: 2                                      # 分片数量
+          id-mod:                                                    # 分表算法名字
+            type: MOD                                                # 算法类型为取模
+            props:                                                   # 算法配置的键名，所有算法配置都需要在props下
+              sharding-count: 3                                      # 分片数量
 
-      readwrite-splitting:                                           # ????????
-        data-sources:                                                # ???
-          master-test0:                                              # ???????????????????????????test0???
-            type: Static                                             # ????
-            load-balancer-name: round_robin                          # ????????
-            props:                                                   # ????????????props?
-              write-data-source-name: master-test0                   # ????
-              read-data-source-names: slave-test0                    # ????
+      readwrite-splitting:                                           # 配置读写分离规则
+        data-sources:                                                # 数据源
+          master-test0:                                              # 这个可以随便取，带有区分意义即可，比如这里表示的是主库test0的规则
+            type: Static                                             # 静态类型
+            load-balancer-name: round_robin                          # 负载均衡算法名字
+            props:                                                   # 具体读写数据源需要配置在props下
+              write-data-source-name: master-test0                   # 写数据源
+              read-data-source-names: slave-test0                    # 读数据源
           master-test1:
-            type: Static                                             # ????
-            load-balancer-name: round_robin                          # ????????
-            props:                                                   # ????????????props?
-              write-data-source-name: master-test1                   # ????
-              read-data-source-names: slave-test1                    # ????
-        load-balancers:                                              # ??????
-          round_robin:                                               # ??????????????
-            type: ROUND_ROBIN                                        # ??????
+            type: Static                                             # 静态类型
+            load-balancer-name: round_robin                          # 负载均衡算法名字
+            props:                                                   # 具体读写数据源需要配置在props下
+              write-data-source-name: master-test1                   # 写数据源
+              read-data-source-names: slave-test1                    # 读数据源
+        load-balancers:                                              # 负载均衡配置
+          round_robin:                                               # 跟上面负载均衡算法的名字对应
+            type: ROUND_ROBIN                                        # 负载均衡算法
     props:
-      sql-show: true                                                 # ??SQL
+      sql-show: true                                                 # 打印SQL
